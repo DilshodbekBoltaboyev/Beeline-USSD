@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/home_Fragment">
+
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.example.myapplication.fragments.home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_menu_Fragment"
+            app:destination="@id/menu_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu_Fragment"
+        android:name="com.example.myapplication.fragments.menu_Fragment"
+        android:label="fragment_menu_"
+        tools:layout="@layout/fragment_menu_" >
+        <action
+            android:id="@+id/action_menu_Fragment_to_sms_Fragment"
+            app:destination="@id/sms_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_daqiqa_Fragment"
+            app:destination="@id/daqiqa_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_daqiqa_Fragment2"
+            app:destination="@id/daqiqa_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_daqiqa_Fragment3"
+            app:destination="@id/daqiqa_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_internet_Fragment"
+            app:destination="@id/internet_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_internet_Fragment2"
+            app:destination="@id/internet_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_tarif_Fragment"
+            app:destination="@id/tarif_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_xizmatlar_Fragment"
+            app:destination="@id/xizmatlar_Fragment" />
+        <action
+            android:id="@+id/action_menu_Fragment_to_yangiliklar_Fragment"
+            app:destination="@id/yangiliklar_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sms_Fragment"
+        android:name="com.example.myapplication.fragments.sms_Fragment"
+        android:label="fragment_sms_"
+        tools:layout="@layout/fragment_sms_" />
+    <fragment
+        android:id="@+id/daqiqa_Fragment"
+        android:name="com.example.myapplication.fragments.daqiqa_Fragment"
+        android:label="fragment_daqiqa_"
+        tools:layout="@layout/fragment_daqiqa_" />
+    <fragment
+        android:id="@+id/internet_Fragment"
+        android:name="com.example.myapplication.fragments.internet_Fragment"
+        android:label="fragment_internet_"
+        tools:layout="@layout/fragment_internet_" />
+    <fragment
+        android:id="@+id/tarif_Fragment"
+        android:name="com.example.myapplication.fragments.tarif_Fragment"
+        android:label="fragment_tarif_"
+        tools:layout="@layout/fragment_tarif_" />
+    <fragment
+        android:id="@+id/xizmatlar_Fragment"
+        android:name="com.example.myapplication.xizmatlar_Fragment"
+        android:label="fragment_xizmatlar_"
+        tools:layout="@layout/fragment_xizmatlar_" />
+    <fragment
+        android:id="@+id/yangiliklar_Fragment"
+        android:name="com.example.myapplication.yangiliklar_Fragment"
+        android:label="fragment_yangiliklar_"
+        tools:layout="@layout/fragment_yangiliklar_" />
+</navigation>
